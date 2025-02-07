@@ -1,0 +1,99 @@
+/* Container Styling */
+.login-container {
+    max-width: 320px;
+    margin: 60px auto;
+    padding: 20px;
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    animation: slideIn 0.5s ease-out;
+}
+
+/* Title Styling */
+.login-container h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+    font-weight: bold;
+}
+
+/* Input Container */
+.input-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 5px;
+}
+
+/* Icon Styling */
+.icon {
+    padding: 10px;
+    background: dodgerblue;
+    color: white;
+    min-width: 40px;
+    text-align: center;
+    border-radius: 4px 0 0 4px;
+}
+
+/* Input Field Styling */
+.input-container input {
+    border: none;
+    outline: none;
+    padding: 10px;
+    width: 100%;
+    font-size: 16px;
+}
+
+/* Input Focus Effects */
+.input-container input:focus {
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.5);
+}
+
+/* Button Styling */
+.login-container button {
+    width: 100%;
+    padding: 12px;
+    margin: 20px 0;
+    background: linear-gradient(45deg, #007bff, #0056b3);
+    border: none;
+    color: white;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+    font-weight: bold;
+}
+
+/* Button Hover Effects */
+.login-container button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Slide-in Animation */
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 480px) {
+    .login-container {
+        width: 85%;
+        margin: 40px auto;
+    }
+
+    .login-container input,
+    .login-container button {
+        width: 95%;
+    }
+}

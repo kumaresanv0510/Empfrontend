@@ -1,0 +1,105 @@
+/* Form Container (Smaller & Compact) */
+.form-container {
+    max-width: 320px; /* Reduced width */
+    margin: 40px auto; /* Less margin */
+    padding: 20px; /* Reduced padding */
+    background: #ffffff;
+    border-radius: 8px; /* Slightly smaller radius */
+    box-shadow: 0 5px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    animation: fadeInScale 0.5s ease-in-out;
+}
+
+/* Form Heading */
+.form-container h2 {
+    font-size: 20px; /* Reduced font size */
+    color: #333;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+/* Input Field Group */
+.form-group {
+    margin-bottom: 12px; /* Less spacing */
+    text-align: left;
+}
+
+/* Input Fields (Smaller & Compact) */
+.form-group input {
+    width: calc(100% - 16px); /* Reduced width */
+    padding: 10px; /* Less padding */
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px; /* Smaller font */
+    transition: 0.3s ease-in-out;
+    display: block;
+    margin: 0 auto;
+    animation: bounceIn 0.5s ease-in-out;
+}
+
+/* Input Focus Effect */
+.form-group input:focus {
+    border-color: #007bff;
+    outline: none;
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.3);
+    transform: scale(1.02);
+}
+
+/* Submit Button (Smaller & Compact) */
+.submit-button {
+    width: calc(100% - 16px);
+    padding: 10px; /* Less padding */
+    background: #007bff;
+    border: none;
+    color: white;
+    font-size: 16px; /* Slightly smaller font */
+    border-radius: 4px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+    display: block;
+    margin: 8px auto;
+}
+
+/* Button Hover & Click Animation */
+.submit-button:hover {
+    background: #0056b3;
+}
+
+.submit-button:active {
+    transform: scale(0.97);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* Animations */
+@keyframes fadeInScale {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes bounceIn {
+    0% {
+        transform: translateY(-8px);
+        opacity: 0;
+    }
+    50% {
+        transform: translateY(4px);
+        opacity: 0.5;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .form-container {
+        width: 85%;
+    }
+}

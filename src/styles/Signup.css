@@ -1,0 +1,111 @@
+    /* Container Styling */
+    .signup-container {
+        max-width: 320px;
+        margin: 60px auto;
+        padding: 55px;
+        background: #ffffff;
+        border-radius: 8px;
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+        text-align: left;
+        animation: slideIn 0.5s ease-out;
+    }
+
+    /* Title Styling */
+    .signup-container h2 {
+        margin-bottom: 15px;
+        font-size: 22px;
+        color: #333;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    /* Input Group Styling */
+    .input-group {
+        position: relative;
+        margin-bottom: 20px;
+    }
+
+    /* Input Field Styling */
+    .input-group input {
+        width: 100%;
+        padding: 10px;
+        font-size: 16px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        outline: none;
+        transition: border-color 0.3s, box-shadow 0.3s;
+    }
+
+    /* Floating Label Styling */
+    .input-group label {
+        position: absolute;
+        top: 10px;
+        left: 15px;
+        font-size: 16px;
+        color: #aaa;
+        pointer-events: none;
+        transition: all 0.2s ease;
+    }
+
+    /* Input Focus Effects */
+    .input-group input:focus {
+        border-color: #007bff;
+        box-shadow: 0 0 8px rgba(0, 123, 255, 0.5);
+    }
+
+    .input-group input:focus + label,
+    .input-group input:not(:placeholder-shown) + label {
+        top: -15px;
+        left: 10px;
+        font-size: 12px;
+        color: #007bff;
+    }
+
+    /* Button Styling */
+    .signup-container button {
+        width: 100%;
+        padding: 10px;
+        margin: 10px 0;
+        background: linear-gradient(45deg, #007bff, #0056b3);
+        border: none;
+        color: white;
+        font-size: 16px;
+        border-radius: 4px;
+        cursor: pointer;
+        transition: transform 0.2s, box-shadow 0.2s;
+        font-weight: bold;
+    }
+
+    /* Button Hover Effects */
+    .signup-container button:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    /* Error Message Styling */
+    .error-message {
+        color: #ff0000;
+        font-size: 14px;
+        margin-top: -10px;
+        margin-bottom: 10px;
+    }
+
+    /* Slide-in Animation */
+    @keyframes slideIn {
+        from {
+            opacity: 0;
+            transform: translateY(20px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    /* Responsive Design */
+    @media (max-width: 480px) {
+        .signup-container {
+            width: 85%;
+            margin: 40px auto;
+        }
+    }
